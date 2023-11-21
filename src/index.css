@@ -40,7 +40,7 @@ h3 {
 	font-weight: 700;
 	display: flex;
 	justify-content: space-between;
-  align-items: center;
+	align-items: center;
 	margin-bottom: 1rem;
 	border-radius: 7px;
 	padding: 0px 17px;
@@ -48,7 +48,6 @@ h3 {
 .group-1 {
 	display: flex;
 	gap: 1rem;
-  position: ;
 }
 
 .reaction {
@@ -69,4 +68,34 @@ h3 {
 }
 .score {
 	color: var(--clr-Dark-gray-blue);
+}
+
+span {
+	color: var(--clr-Pale-blue);
+	font-size: 27px;
+}
+.seventy-six {
+	font-weight: 800;
+	font-size: 60px;
+}
+.total-score {
+	border-radius: 100%;
+	background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) 80%);
+	width: 150px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1.5rem auto;
+}
+p {
+	margin: 0;
+}
+.outcome {
+	width: 78%;
+	margin: auto;
+}
+h2 {
+	font-size: 20px;
 }

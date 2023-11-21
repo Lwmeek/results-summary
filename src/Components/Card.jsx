@@ -1,39 +1,31 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 
 export default function BasicCard() {
-  return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Your Results
-        </Typography>
-        <Typography variant="h5" component="div">
-          76
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          of 100
-        </Typography>
-        <Typography variant="body2">
-          Great
-          <br />
-          You scored higher than 65% of the people who have taken these tests.
-        </Typography>
-      </CardContent>
-    </Card>
-  );
+	return (
+		<Card
+			sx={{
+				textAlign: "center",
+				background:
+					"linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%))",
+				borderRadius: "0 0 35px 35px",
+				color: "var(--clr-Light-lavender)",
+				paddingBottom: "1rem",
+			}}
+		>
+			<CardContent>
+				<h2>Your Result</h2>
+				<div className="total-score">
+					<span className="seventy-six">76</span> <p>of 100</p>
+				</div>
+				<div className="outcome">
+					<span>Great</span>
+					<p>
+						You scored higher than 65% of the people who have taken these tests.
+					</p>
+				</div>
+			</CardContent>
+		</Card>
+	);
 }
