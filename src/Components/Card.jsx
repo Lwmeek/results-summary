@@ -2,6 +2,7 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
+
 export default function BasicCard() {
 	return (
 		<Card
@@ -9,10 +10,10 @@ export default function BasicCard() {
 				textAlign: "center",
 				background:
 					"linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%))",
-				borderRadius: "0 0 35px 35px",
 				color: "var(--clr-Light-lavender)",
 				paddingBottom: "1rem",
 			}}
+			className="card1"
 		>
 			<CardContent>
 				<h2>Your Result</h2>

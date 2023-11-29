@@ -1,10 +1,8 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 
 const bull = (
 	<Box
@@ -17,7 +15,7 @@ const bull = (
 
 export default function BasicCard2() {
 	return (
-		<Card sx={{ width: "100%" }}>
+		<Card sx={{ width: "100%", boxShadow:"none" }} className="card2">
 			<CardContent sx={{ width: "85%", margin: " 0 auto" }}>
 				<h3>Summary</h3>
 				<div className="reaction score-card">
